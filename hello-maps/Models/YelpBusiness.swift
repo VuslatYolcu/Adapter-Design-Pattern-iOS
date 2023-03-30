@@ -9,6 +9,7 @@
 // this is third party model provided to you by third party
 
 import Foundation
+import CoreLocation
 
 struct YelpBusiness :Decodable {
     
@@ -17,4 +18,11 @@ struct YelpBusiness :Decodable {
     var longitude :Double
     var rating :Double
     
+}
+
+extension YelpBusiness: BusinessProtocol {
+    func adaptBusinessFromYelp() -> Business {
+        let location = CLLocation(latitude: self.latitude, longitude: self.longitude)
+        return Business(name: self.title, location: location, rating: self.rating)
+    }
 }

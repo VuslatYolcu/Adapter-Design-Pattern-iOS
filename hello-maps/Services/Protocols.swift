@@ -12,3 +12,7 @@ import Foundation
 protocol YelpSearchResults {
     func getBusinesses(completion :@escaping ([YelpBusiness]) -> ())
 }
+
+protocol BusinessProtocol {
+    func adaptBusinessFromYelp() -> Business
+}
