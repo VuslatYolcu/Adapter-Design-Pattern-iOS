@@ -17,6 +17,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     let annotationFactory = AnnotationFactory()
     
+    private let yelpService = YelpSearchService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +35,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
   
     @IBAction func showYelpSuggestionsButtonPressed() {
-        
+        yelpService.adaptSearchResultsFromYelp { (searchResults) in
+            
+            for business in searchResults.business {
+                self.addBusinessToMap(business: business)
+            }
+            
+        }
+    }
+    
+    private func addBusinessToMap(business: Business) {
+        let businessVM = annotationFactory.createBusinessViewModel(business: business)
+        self.mapView.addAnnotation(businessVM)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
