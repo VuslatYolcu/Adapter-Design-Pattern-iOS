@@ -13,6 +13,14 @@ protocol YelpSearchResults {
     func getBusinesses(completion :@escaping ([YelpBusiness]) -> ())
 }
 
+protocol SearchResultsProtocol {
+    func adaptSearchResultsFromYelp(completion: @escaping (SearchResults) -> ())
+}
+
+struct SearchResults {
+    var business: [Business]
+}
+
 protocol BusinessProtocol {
     func adaptBusinessFromYelp() -> Business
 }
