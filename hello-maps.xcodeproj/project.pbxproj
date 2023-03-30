@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1145287829D5F87300321A3C /* YelpSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1145287729D5F87300321A3C /* YelpSearchService.swift */; };
+		1145287B29D5F8EB00321A3C /* yelp-business.json in Resources */ = {isa = PBXBuildFile; fileRef = 1145287A29D5F8EB00321A3C /* yelp-business.json */; };
 		8D1DB764214AA78100E24515 /* YelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DB763214AA78100E24515 /* YelpBusiness.swift */; };
 		8D1DB767214AA7DE00E24515 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DB766214AA7DE00E24515 /* Protocols.swift */; };
 		8D317A1821481F070047E344 /* BusinessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D317A1721481F070047E344 /* BusinessViewModel.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1145287729D5F87300321A3C /* YelpSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchService.swift; sourceTree = "<group>"; };
+		1145287A29D5F8EB00321A3C /* yelp-business.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "yelp-business.json"; sourceTree = "<group>"; };
 		8D1DB763214AA78100E24515 /* YelpBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusiness.swift; sourceTree = "<group>"; };
 		8D1DB766214AA7DE00E24515 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		8D317A1721481F070047E344 /* BusinessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewModel.swift; sourceTree = "<group>"; };
@@ -69,10 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1145287929D5F8C400321A3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1145287A29D5F8EB00321A3C /* yelp-business.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8D1DB765214AA7D000E24515 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				8D1DB766214AA7DE00E24515 /* Protocols.swift */,
+				1145287729D5F87300321A3C /* YelpSearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 		8DAB2B2621174ED900BF5501 /* hello-maps */ = {
 			isa = PBXGroup;
 			children = (
+				1145287929D5F8C400321A3C /* Resources */,
 				8D1DB765214AA7D000E24515 /* Services */,
 				8D73B8AF2148C03B00DE396B /* Models */,
 				8D73B8AC2148BFDA00DE396B /* Factories */,
@@ -226,6 +240,7 @@
 				8DAB2B2D21174ED900BF5501 /* Main.storyboard in Resources */,
 				8DD3DA322148BE1500C87F7B /* bad.png in Resources */,
 				8DD3DA2C2148BE1500C87F7B /* bad@2x.png in Resources */,
+				1145287B29D5F8EB00321A3C /* yelp-business.json in Resources */,
 				8D41B3DD21179E8E0035CED3 /* chevron-flat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +257,7 @@
 				8D73B8AE2148BFEF00DE396B /* AnnotationFactory.swift in Sources */,
 				8D73B8B12148C04800DE396B /* Business.swift in Sources */,
 				8D317A1821481F070047E344 /* BusinessViewModel.swift in Sources */,
+				1145287829D5F87300321A3C /* YelpSearchService.swift in Sources */,
 				8D998AB82117928600EAC2F3 /* CoffeeAnnotation.swift in Sources */,
 				8D1DB764214AA78100E24515 /* YelpBusiness.swift in Sources */,
 				8D1DB767214AA7DE00E24515 /* Protocols.swift in Sources */,

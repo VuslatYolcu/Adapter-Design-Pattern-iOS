@@ -1,0 +1,15 @@
+
+[
+    {
+        "title" : "Starbucks",
+        "latitude" : 37.331992,
+        "longitude" : -122.031348,
+        "rating" : 4.2
+    },
+    {
+        "title" : "Tuscany Coffee",
+        "latitude" : 37.333244,
+        "longitude" : -122.032240,
+        "rating" : 4.8
+    }
+]
